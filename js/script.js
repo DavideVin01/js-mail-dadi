@@ -10,19 +10,17 @@ const userEmail = prompt('Inserisci qui la tua email');
 console.log(userEmail);
 
 // # First case > Not working
-
-// for (let i = 0; i < savedEmails.length; i++) {
-//     if (userEmail === savedEmails) {
-//         console.log(`Benvenuto ${userEmail}`);
-//     } else {
-//         console.log('La tua mail non risulta registrata.');
-//     }
-// }
+/* for (let i = 0; i < savedEmails.length; i++) {
+    if (userEmail === savedEmails) {
+        console.log(`Benvenuto ${userEmail}`);
+    } else {
+        console.log('La tua mail non risulta registrata.');
+    }
+} */
 
 // # Second case > Working
-
-const result = savedEmails.find(value => value === userEmail);
-if (result) {
+const mailValidation = savedEmails.find(value => value === userEmail);
+if (mailValidation) {
     console.log(`Benvenuto ${userEmail}`);
 } else {
     console.log('La tua mail non risulta registrata.');
