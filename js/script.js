@@ -8,3 +8,9 @@ const savedEmails = ['primaemail@gmail.com', 'secondaemail@gmail.com', 'emailaca
 
 const userEmail = prompt('Inserisci qui la tua email');
 console.log(userEmail);
+
+if (userEmail === savedEmails) {
+    console.log(`Benvenuto ${userEmail}`);
+} else {
+    console.log('La tua mail non risulta registrata.');
+}
