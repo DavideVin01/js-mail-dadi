@@ -5,3 +5,6 @@ controlla che sia nella lista di chi può accedere
 Stampa un messaggio appropriato in console sull’esito del controllo. */
 
 const savedEmails = ['primaemail@gmail.com', 'secondaemail@gmail.com', 'emailacaso@gmail.com', 'testemail@gmail.com'];
+
+const userEmail = prompt('Inserisci qui la tua email');
+console.log(userEmail);
