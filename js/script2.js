@@ -3,10 +3,10 @@
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 Stampare in console i tiri di dado e il risultato. */
 
-let dadoUtente = Math.round(Math.random() * 5 + 1);
+let dadoUtente = Math.floor(Math.random() * 6) + 1;
 console.log(`Il tiro dell'utente è ${dadoUtente}`);
 
-let dadoComputer = Math.round(Math.random() * 5 + 1);
+let dadoComputer = Math.floor(Math.random() * 6) + 1;
 console.log(`Il tiro del Computer è ${dadoComputer}`);
 
 if (dadoUtente > dadoComputer) {
